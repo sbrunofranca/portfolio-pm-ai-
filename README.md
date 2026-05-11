@@ -41,7 +41,7 @@ Projetos que simulam ciclo completo de produto (da ideia ao impacto).
 
 Sistema de assistente inteligente para suporte ao cliente que atua como primeira camada de atendimento, reduzindo carga de tickets humanos.
 
-👉 [Ver projeto completo](https://github.com/sbrunofranca/portfolio-pm-ai-/tree/main/agent-assist-copilot
+👉 [Ver projeto completo](https://github.com/sbrunofranca/portfolio-pm-ai-/tree/main/agent-assist-copilot)
 
 **Destaques:**
 - RAG com base de conhecimento interna
