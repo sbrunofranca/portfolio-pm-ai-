@@ -1,4 +1,32 @@
-venv/
-.env
+# Python
 __pycache__/
+*.pyc
+*.pyo
+
+# Env
+.env
+
+# Virtual env
+venv/
+.env/
+
+# Streamlit
+.streamlit/
+
+# Models pesados
+*.pkl
+*.joblib
+
+# Data (IMPORTANTE em portfólio IA)
+data/
+!data/.gitkeep
+
+# OS
 .DS_Store
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
