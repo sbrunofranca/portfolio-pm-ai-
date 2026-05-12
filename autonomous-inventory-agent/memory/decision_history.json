@@ -1,0 +1,254 @@
+[
+    {
+        "timestamp": "2026-05-12 10:19:13.976625",
+        "demand": {
+            "recent_average": 33.57,
+            "historical_average": 36.27,
+            "trend": "down",
+            "risk_level": "low"
+        },
+        "inventory": {
+            "restock": true,
+            "quantity": 755,
+            "priority": "high",
+            "optimization_status": "optimized",
+            "estimated_cost": 11702.5,
+            "predicted_demand": 67
+        },
+        "cost": {
+            "unit_cost": 12,
+            "logistics_cost": 1510,
+            "storage_cost": 1132.5,
+            "total_cost": 11702.5
+        },
+        "logistics": {
+            "supplier": "Supplier A",
+            "lead_time_days": 2,
+            "strategy": "priority_shipping"
+        }
+    },
+    {
+        "timestamp": "2026-05-12 10:19:28.505803",
+        "demand": {
+            "recent_average": 36.57,
+            "historical_average": 35.3,
+            "trend": "up",
+            "risk_level": "medium"
+        },
+        "inventory": {
+            "restock": true,
+            "quantity": 732,
+            "priority": "high",
+            "optimization_status": "optimized",
+            "estimated_cost": 11346.0,
+            "predicted_demand": 73
+        },
+        "cost": {
+            "unit_cost": 12,
+            "logistics_cost": 1464,
+            "storage_cost": 1098.0,
+            "total_cost": 11346.0
+        },
+        "logistics": {
+            "supplier": "Supplier A",
+            "lead_time_days": 2,
+            "strategy": "priority_shipping"
+        }
+    },
+    {
+        "timestamp": "2026-05-12 10:20:03.883439",
+        "demand": {
+            "recent_average": 33.14,
+            "historical_average": 33.6,
+            "trend": "down",
+            "risk_level": "low"
+        },
+        "inventory": {
+            "restock": true,
+            "quantity": 674,
+            "priority": "high",
+            "optimization_status": "optimized",
+            "estimated_cost": 10447.0,
+            "predicted_demand": 66
+        },
+        "cost": {
+            "unit_cost": 12,
+            "logistics_cost": 1348,
+            "storage_cost": 1011.0,
+            "total_cost": 10447.0
+        },
+        "logistics": {
+            "supplier": "Supplier A",
+            "lead_time_days": 2,
+            "strategy": "priority_shipping"
+        }
+    },
+    {
+        "timestamp": "2026-05-12 10:20:44.564296",
+        "demand": {
+            "recent_average": 37.0,
+            "historical_average": 36.07,
+            "trend": "up",
+            "risk_level": "medium"
+        },
+        "inventory": {
+            "restock": true,
+            "quantity": 756,
+            "priority": "high",
+            "optimization_status": "optimized",
+            "estimated_cost": 11718.0,
+            "predicted_demand": 74
+        },
+        "cost": {
+            "unit_cost": 12,
+            "logistics_cost": 1512,
+            "storage_cost": 1134.0,
+            "total_cost": 11718.0
+        },
+        "logistics": {
+            "supplier": "Supplier A",
+            "lead_time_days": 2,
+            "strategy": "priority_shipping"
+        }
+    },
+    {
+        "timestamp": "2026-05-12 10:21:08.079884",
+        "demand": {
+            "recent_average": 35.0,
+            "historical_average": 35.27,
+            "trend": "down",
+            "risk_level": "low"
+        },
+        "inventory": {
+            "restock": true,
+            "quantity": 728,
+            "priority": "high",
+            "optimization_status": "optimized",
+            "estimated_cost": 11284.0,
+            "predicted_demand": 70
+        },
+        "cost": {
+            "unit_cost": 12,
+            "logistics_cost": 1456,
+            "storage_cost": 1092.0,
+            "total_cost": 11284.0
+        },
+        "logistics": {
+            "supplier": "Supplier A",
+            "lead_time_days": 2,
+            "strategy": "priority_shipping"
+        }
+    },
+    {
+        "timestamp": "2026-05-12 10:39:47.499964",
+        "demand": {
+            "recent_average": 34.29,
+            "historical_average": 34.07,
+            "trend": "up",
+            "risk_level": "medium"
+        },
+        "inventory": {
+            "restock": true,
+            "quantity": 690,
+            "priority": "high",
+            "optimization_status": "optimized",
+            "estimated_cost": 10695.0,
+            "predicted_demand": 68
+        },
+        "cost": {
+            "unit_cost": 12,
+            "logistics_cost": 1380,
+            "storage_cost": 1035.0,
+            "total_cost": 10695.0
+        },
+        "logistics": {
+            "supplier": "Supplier A",
+            "lead_time_days": 2,
+            "strategy": "priority_shipping"
+        }
+    },
+    {
+        "timestamp": "2026-05-12 10:40:02.003990",
+        "demand": {
+            "recent_average": 35.29,
+            "historical_average": 34.5,
+            "trend": "up",
+            "risk_level": "medium"
+        },
+        "inventory": {
+            "restock": true,
+            "quantity": 705,
+            "priority": "high",
+            "optimization_status": "optimized",
+            "estimated_cost": 10927.5,
+            "predicted_demand": 70
+        },
+        "cost": {
+            "unit_cost": 12,
+            "logistics_cost": 1410,
+            "storage_cost": 1057.5,
+            "total_cost": 10927.5
+        },
+        "logistics": {
+            "supplier": "Supplier A",
+            "lead_time_days": 2,
+            "strategy": "priority_shipping"
+        }
+    },
+    {
+        "timestamp": "2026-05-12 10:40:33.617009",
+        "demand": {
+            "recent_average": 32.86,
+            "historical_average": 34.9,
+            "trend": "down",
+            "risk_level": "low"
+        },
+        "inventory": {
+            "restock": true,
+            "quantity": 712,
+            "priority": "high",
+            "optimization_status": "optimized",
+            "estimated_cost": 11036.0,
+            "predicted_demand": 65
+        },
+        "cost": {
+            "unit_cost": 12,
+            "logistics_cost": 1424,
+            "storage_cost": 1068.0,
+            "total_cost": 11036.0
+        },
+        "logistics": {
+            "supplier": "Supplier A",
+            "lead_time_days": 2,
+            "strategy": "priority_shipping"
+        }
+    },
+    {
+        "timestamp": "2026-05-12 10:41:08.820389",
+        "demand": {
+            "recent_average": 37.14,
+            "historical_average": 35.5,
+            "trend": "up",
+            "risk_level": "medium"
+        },
+        "inventory": {
+            "restock": true,
+            "quantity": 739,
+            "priority": "high",
+            "optimization_status": "optimized",
+            "estimated_cost": 11454.5,
+            "predicted_demand": 74
+        },
+        "cost": {
+            "unit_cost": 12,
+            "logistics_cost": 1478,
+            "storage_cost": 1108.5,
+            "total_cost": 11454.5
+        },
+        "logistics": {
+            "supplier": "Supplier A",
+            "lead_time_days": 2,
+            "strategy": "priority_shipping"
+        }
+    }
+]

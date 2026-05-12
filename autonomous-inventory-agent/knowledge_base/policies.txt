@@ -1,0 +1,26 @@
+SUPPLY CHAIN POLICIES
+
+1. Safety stock mínimo:
+Todos os produtos devem manter pelo menos 100 unidades de segurança.
+
+2. Reposição automática:
+Reposições devem ocorrer quando estoque ficar abaixo de 150 unidades.
+
+3. Frete prioritário:
+Pedidos acima de 500 unidades devem usar priority shipping.
+
+4. Lead time:
+Supplier A possui lead time médio de 5 dias.
+Supplier B possui lead time médio de 8 dias.
+
+5. Política de custo:
+Evitar excesso de estoque devido custo de armazenagem.
+
+6. Política operacional:
+Priorizar prevenção de ruptura de estoque em produtos críticos.
+
+7. Política logística:
+Grandes pedidos devem ser distribuídos em múltiplos centros.
+
+8. Política de risco:
+Demanda crescente aumenta risco operacional.
