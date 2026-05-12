@@ -1,394 +1,357 @@
-# 🚀 Autonomous Inventory Agent
+📦 Autonomous Inventory Agent
 
-AI-powered autonomous inventory management system with:
-- Multi-Agent AI workflows
-- Demand intelligence
-- Inventory optimization
-- Enterprise RAG
-- Conversational supply chain assistant
-- Historical memory and decision tracking
+Plataforma de gerenciamento autônomo de supply chain e inventário com IA.
 
----
+Este projeto simula uma operação real de cadeia de suprimentos usando:
+- Agentes de IA
+- Previsão de Demanda
+- Simulação de Inventário
+- Análise de Risco
+- Decisões Autônomas de Compras
+- RAG (Retrieval-Augmented Generation) empresarial
+- Explicações com LLM
 
-# 📌 Problema Real Sendo Resolvido
+O sistema atua como um AI Supply Chain Copilot capaz de:
+- prever demanda
+- monitorar inventário
+- detectar riscos operacionais
+- simular comportamento de estoque
+- selecionar fornecedores automaticamente
+- explicar decisões de negócio em linguagem natural
 
-Empresas frequentemente enfrentam problemas como:
+------------------------------------------------------------
 
-- ruptura de estoque
-- excesso de inventário
-- decisões manuais lentas
-- dificuldade de interpretar demanda
-- falta de visibilidade operacional
-- dependência de dashboards complexos
+🚀 VISÃO GERAL DO PROJETO
 
-Além disso, planners e analistas precisam:
-- consultar múltiplos sistemas
-- interpretar indicadores manualmente
-- tomar decisões sob pressão operacional
+A plataforma simula um ambiente moderno de supply chain orientado por IA.
 
-O objetivo deste projeto é criar um sistema inteligente capaz de:
+Ela combina:
+- Machine Learning
+- IA Agêntica (Agentic AI)
+- Simulação de Supply Chain
+- Tomada de decisão autônoma
+- Retrieval-Augmented Generation (RAG)
+- Raciocínio com LLM
 
-✅ monitorar estoque
-✅ analisar demanda
-✅ recomendar reposição
-✅ justificar decisões
-✅ responder perguntas em linguagem natural
-✅ consultar políticas corporativas
+O objetivo é demonstrar aplicações práticas de:
+- IA para Supply Chain
+- Gestão autônoma de inventário
+- Procurement inteligente
+- Sistemas de IA empresarial
 
----
+------------------------------------------------------------
 
-# 🏢 Contexto de Negócio
+🧠 PRINCIPAIS FUNCIONALIDADES
 
-## Usuários
+📈 Previsão de Demanda
 
-- Supply Chain Analysts
-- Inventory Planners
-- Procurement Teams
-- Logistics Managers
-- Operations Teams
+Prevê a demanda futura de produtos usando dados históricos de inventário.
 
-## Cenário Operacional
+Capacidades:
+- análise de tendências
+- estimativa de demanda futura
+- pipeline de forecasting
+- suporte ao planejamento de estoque
 
-Em ambientes de supply chain:
+------------------------------------------------------------
 
-- decisões precisam acontecer rapidamente
-- estoque parado gera custo
-- ruptura gera perda de receita
-- demanda muda constantemente
-- regras operacionais são complexas
+🏭 Simulação de Supply Chain
 
-O sistema atua como um:
-AI Copilot para operações de estoque.
+Simula operações diárias de inventário.
 
----
+Capacidades:
+- consumo de estoque
+- processo de reposição
+- simulação de lead time
+- detecção de stockout
+- simulação do fluxo operacional
 
-# 🧠 Hipótese
+Construído com:
+- SimPy
 
-Se criarmos um sistema com:
+------------------------------------------------------------
 
-- agentes especializados
-- memória operacional
-- RAG corporativo
-- explicabilidade
-- interface conversacional
+⚠️ Análise de Risco Operacional
 
-Então usuários não técnicos poderão:
-- tomar decisões mais rápidas
-- reduzir risco operacional
-- acessar conhecimento corporativo
-- operar supply chain com apoio de IA
+Analisa riscos operacionais do inventário.
 
----
+Capacidades:
+- monitoramento de stockout
+- análise de saúde do estoque
+- classificação de risco operacional
+- escalonamento de risco
 
-# 💡 Solução
+Níveis de risco:
+- BAIXO RISCO
+- MÉDIO RISCO
+- ALTO RISCO
 
-O projeto implementa um:
-Autonomous Inventory AI System
+------------------------------------------------------------
 
-capaz de:
+🤖 Motor Autônomo de Procurement
 
-✅ analisar demanda
-✅ simular decisões de estoque
-✅ calcular custos
-✅ definir logística
-✅ consultar políticas corporativas
-✅ responder perguntas em linguagem natural
+Agente de IA responsável por decisões autônomas de reposição.
 
----
+Capacidades:
+- decidir quando comprar
+- decidir quanto comprar
+- selecionar melhor fornecedor
+- otimizar custo vs confiabilidade
+- priorizar reposições urgentes
 
-# 🎯 Caso de Uso
+Critérios de decisão:
+- previsão de demanda
+- níveis de estoque
+- lead time do fornecedor
+- confiabilidade do fornecedor
+- risco operacional
 
-Exemplos de perguntas:
+------------------------------------------------------------
 
-- Qual a política de estoque mínimo?
-- Quando devemos usar priority shipping?
-- Existe risco operacional?
-- O custo da operação aumentou?
-- Qual fornecedor possui maior lead time?
+🚚 Inteligência Logística
 
----
+Simula raciocínio logístico para operações de supply chain.
 
-# 🏗️ Arquitetura da Solução
+Capacidades:
+- avaliação de lead time
+- análise logística
+- suporte ao fluxo de procurement
 
-User
-↓
-Streamlit UI
-↓
-Multi-Agent Workflow
-↓
-Demand Agent
-Inventory Agent
-Cost Agent
-Logistics Agent
-↓
-Memory Layer
-↓
-RAG Knowledge Base
-↓
-LLM Response (Groq + Llama)
+------------------------------------------------------------
 
----
+💰 Otimização de Custos
 
-# 🤖 Agentes Implementados
+Avalia custos de aquisição e impacto operacional.
 
-## 📊 Demand Agent
+Capacidades:
+- análise de custo de reposição
+- estimativa de custo de inventário
+- suporte à otimização de supply
 
-Responsável por:
-- analisar tendência de demanda
-- detectar crescimento/redução
-- avaliar risco operacional
+------------------------------------------------------------
 
-## 📦 Inventory Agent
+💬 Assistente de IA (Chat)
 
-Responsável por:
-- decidir reposição
-- calcular necessidade de estoque
-- evitar ruptura
-
-## 💰 Cost Agent
-
-Responsável por:
-- estimar custo operacional
-- avaliar impacto financeiro
-- otimizar compras
-
-## 🚚 Logistics Agent
-
-Responsável por:
-- selecionar estratégia logística
-- avaliar lead time
-- definir shipping priority
-
----
-
-# 🧠 Memory Layer
-
-O sistema mantém:
-- histórico de decisões
-- contexto operacional
-- evolução temporal
-
-Isso permite:
-- reasoning histórico
-- comparação entre execuções
-- observabilidade operacional
-
----
-
-# 📚 RAG — Enterprise Knowledge Base
-
-O sistema consulta documentos corporativos usando:
-- embeddings
-- vector search
-- retrieval augmentation
+Usuários podem interagir com o sistema em linguagem natural.
 
 Exemplos:
-- políticas de estoque
+- "Existe risco operacional?"
+- "Devemos reabastecer o estoque?"
+- "Qual fornecedor devemos escolher?"
+- "Explique a decisão de compra."
+
+Powered by:
+- API Groq
+- Modelos Llama
+
+------------------------------------------------------------
+
+📚 Base de Conhecimento Empresarial (RAG)
+
+Implementa Retrieval-Augmented Generation para contexto empresarial.
+
+Fontes de conhecimento:
+- políticas de supply chain
+- procedimentos de inventário
 - regras logísticas
-- processos operacionais
-- lead times
-- regras de reposição
+- diretrizes de procurement
 
----
+Capacidades:
+- busca semântica
+- recuperação contextual
+- respostas fundamentadas
 
-# ⚙️ Funcionalidades
-
-## ✅ Multi-Agent Workflow
-
-Agentes colaboram em sequência:
-- compartilhando contexto
-- executando decisões
-- consolidando estado operacional
-
-## ✅ Conversational AI
-
-Usuários podem:
-- fazer perguntas em linguagem natural
-- receber explicações executivas
-- consultar políticas corporativas
-
-## ✅ Historical Memory
-
-O sistema:
-- salva decisões passadas
-- rastreia histórico operacional
-- fornece contexto temporal
-
-## ✅ RAG Grounding
-
-As respostas:
-- utilizam documentos internos
-- reduzem hallucination
-- melhoram precisão operacional
-
----
-
-# 🛠️ Tecnologias Utilizadas
-
-## AI / LLM
-
-- Groq
-- Llama 3
-- Prompt Engineering
-
-## RAG
-
-- LangChain
-- ChromaDB
+Construído com:
+- FAISS
 - Sentence Transformers
+- LangChain
 
-## Data / Supply Chain
+------------------------------------------------------------
 
+🧠 Memória Histórica de Decisões
+
+Armazena decisões operacionais anteriores.
+
+Capacidades:
+- rastreamento histórico
+- memória operacional
+- suporte a observabilidade futura
+
+------------------------------------------------------------
+
+🏗️ ARQUITETURA DO SISTEMA
+
+Previsão de Demanda
+↓
+Simulação de Inventário
+↓
+Análise de Risco
+↓
+Procurement Autônomo
+↓
+Seleção de Fornecedores
+↓
+Explicação de Negócio
+↓
+Assistente de IA
+
+------------------------------------------------------------
+
+🤖 AGENTES DE IA
+
+📊 Agente de Demanda
+📦 Agente de Inventário
+💰 Agente de Custos
+🚚 Agente Logístico
+⚠️ Agente de Risco
+🤖 Agente de Procurement Autônomo
+
+------------------------------------------------------------
+
+🖥️ DASHBOARD STREAMLIT
+
+- KPIs operacionais
+- gráficos de inventário
+- decisões de IA
+- monitoramento de risco
+- insights de previsão
+- interface de chat
+- visualização de agentes
+
+------------------------------------------------------------
+
+🛠️ STACK TECNOLÓGICA
+
+Core:
+- Python
 - pandas
 - numpy
 
-## Frontend
+IA / ML:
+- scikit-learn
+- Groq API
+- Llama models
 
+Simulação:
+- SimPy
+
+RAG:
+- LangChain
+- FAISS
+- sentence-transformers
+
+Frontend:
 - Streamlit
 
-## Backend
+Futuro MLOps:
+- MLflow
+- Docker
+- FastAPI
 
-- Python
+------------------------------------------------------------
 
----
+📂 ESTRUTURA DO PROJETO
 
-# 📊 Métricas de Sucesso
+autonomous-inventory-agent/
 
-O sistema busca reduzir:
+├── app/
+├── agents/
+├── memory/
+├── knowledge_base/
+├── data/
+├── ui/
+├── ingest.py
+├── requirements.txt
+└── README.md
 
-- ruptura de estoque
-- excesso de inventário
-- tempo de tomada de decisão
-- dependência operacional manual
+------------------------------------------------------------
 
----
+▶️ COMO EXECUTAR
 
-# 📈 Impacto Esperado
-
-## Operacional
-
-✅ decisões mais rápidas
-✅ redução de risco
-✅ maior visibilidade
-
-## Negócio
-
-✅ menor custo operacional
-✅ maior eficiência logística
-✅ aumento de disponibilidade de produtos
-
-## Usuário
-
-✅ acesso simplificado a informações
-✅ linguagem natural
-✅ menos dependência de dashboards
-
----
-
-# ▶️ Como Executar
-
-1. Clonar projeto
-
+1. Clonar repositório:
 git clone <repo_url>
 
-2. Criar ambiente virtual
-
+2. Criar ambiente virtual:
 python -m venv venv
 
-3. Ativar ambiente
+3. Ativar ambiente:
 
 Mac/Linux:
 source venv/bin/activate
 
-4. Instalar dependências
+Windows:
+venv\Scripts\activate
 
+4. Instalar dependências:
 pip install -r requirements.txt
 
-5. Configurar variáveis
+5. Configurar .env:
+GROQ_API_KEY=sua_chave_api
 
-Criar `.env`
-
-GROQ_API_KEY=your_api_key
-
-6. Processar documentos RAG
-
+6. Ingerir documentos:
 python ingest.py
 
-7. Executar aplicação
-
+7. Rodar app:
 streamlit run ui/streamlit_app.py
 
----
+------------------------------------------------------------
 
-# ⚖️ Trade-offs
+🔥 CAPACIDADES ATUAIS
 
-## OR-Tools removido temporariamente
+✅ Previsão de Demanda
+✅ Simulação de Inventário
+✅ Detecção de Risco Operacional
+✅ Procurement Autônomo
+✅ Seleção de Fornecedores
+✅ Otimização de Custos
+✅ Multi-Agent AI Workflow
+✅ RAG Empresarial
+✅ Assistente de IA
+✅ Memória Histórica
+✅ Dashboard Enterprise
 
-Inicialmente o projeto utilizava:
-- Google OR-Tools
+------------------------------------------------------------
 
-Porém:
-- conflitos protobuf no macOS Apple Silicon
-- problemas binários no ambiente local
+🚀 EVOLUÇÕES FUTURAS
 
-Foi adotada uma:
-optimization engine simplificada
+ETAPA 21 — MLOps + Observabilidade:
+- MLflow tracking
+- logging de experimentos
+- observabilidade de agentes
+- versionamento de modelos
+- monitoramento de decisões
 
-Vantagens:
-- maior estabilidade
-- explicabilidade
-- simplicidade do MVP
-
-## Knowledge Base simplificada
-
-Atualmente:
-- documentos em `.txt`
-
-Futuramente:
-- PDFs
-- ERPs
-- bancos corporativos
-- SharePoint
-- SAP
-
-## Forecasting ainda simulado
-
-A demanda ainda é:
-- parcialmente simulada
-
-Próxima evolução:
-- modelos reais de ML
-- forecasting temporal
-
----
-
-# 🚀 Próximos Passos
-
-## ETAPA 21 — MLOps
-
-Adicionar:
-- MLflow
-- monitoramento
-- tracking de decisões
-- observabilidade
-
-## ETAPA 22 — Deploy Cloud
-
-Deploy com:
+Melhorias futuras:
+- FastAPI backend
 - Docker
-- FastAPI
-- AWS/GCP
+- AWS deployment
+- ERP integration
+- real-time pipelines
+- LangGraph orchestration
+- CrewAI agents
+- reinforcement learning
 
----
+------------------------------------------------------------
 
-# 🧠 Resultado Final Esperado
+🎯 VALOR DE NEGÓCIO
 
-Um sistema estilo:
+Este projeto demonstra como IA pode:
+- automatizar decisões de inventário
+- reduzir rupturas de estoque
+- otimizar procurement
+- melhorar supply chain
+- gerar inteligência explicável
 
-"AI Supply Chain Copilot que opera estoque, consulta conhecimento corporativo e explica decisões usando agentes inteligentes."
+------------------------------------------------------------
 
----
+👨‍💻 AUTOR
 
-# 👨‍💻 Autor
+Bruno
 
-Bruno — AI Product & Operations Portfolio
+Projeto de portfólio em IA / Data / Supply Chain
+
+Para:
+- AI Engineer roles
+- Supply Chain AI
+- sistemas autônomos
+- IA empresarial
