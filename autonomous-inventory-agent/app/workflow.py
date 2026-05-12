@@ -10,6 +10,16 @@ from app.agents.cost_agent import analyze_cost
 
 from app.agents.logistics_agent import logistics_decision
 
+from app.agents.risk_agent import risk_agent
+
+from app.agents.autonomous_replenishment_agent import (
+    autonomous_replenishment_agent
+)
+
+from app.forecast_engine import predict_next_demand
+
+from app.supply_chain_simulator import run_simulation
+
 
 # =========================================================
 # WORKFLOW ENGINE
@@ -20,6 +30,18 @@ def run_workflow(df):
     """
     Executa workflow multi-agent.
     """
+
+    # =====================================================
+    # FORECAST
+    # =====================================================
+
+    forecast = predict_next_demand()
+
+    # =====================================================
+    # SIMULATION
+    # =====================================================
+
+    simulation = run_simulation()
 
     # =====================================================
     # STEP 1 — DEMAND AGENT
@@ -38,6 +60,7 @@ def run_workflow(df):
     # =====================================================
 
     cost_output = analyze_cost(
+
         inventory_output["quantity"]
     )
 
@@ -46,14 +69,19 @@ def run_workflow(df):
     # =====================================================
 
     logistics_output = logistics_decision(
+
         inventory_output["quantity"]
     )
 
     # =====================================================
-    # STEP 5 — CONSOLIDATED STATE
+    # PARTIAL STATE
     # =====================================================
 
     state = {
+
+        "forecast": forecast,
+
+        "simulation": simulation,
 
         "demand": demand_output,
 
@@ -63,6 +91,34 @@ def run_workflow(df):
 
         "logistics": logistics_output
     }
+
+    # =====================================================
+    # STEP 5 — RISK AGENT
+    # =====================================================
+
+    risk_analysis = risk_agent(state)
+
+    # =====================================================
+    # ADD RISK TO STATE
+    # =====================================================
+
+    state["risk_analysis"] = risk_analysis
+
+    # =====================================================
+    # STEP 6 — AUTONOMOUS REPLENISHMENT
+    # =====================================================
+
+    replenishment_decision = (
+        autonomous_replenishment_agent(state)
+    )
+
+    # =====================================================
+    # ADD DECISION TO STATE
+    # =====================================================
+
+    state["replenishment_decision"] = (
+        replenishment_decision
+    )
 
     # =====================================================
     # RETURN

@@ -100,6 +100,18 @@ def ask_agents(
 
     context = f"""
 
+    AUTONOMOUS DECISION:
+    {agents_output["replenishment_decision"]}
+
+    SIMULATION:
+    {agents_output["simulation"]}
+
+    RISK ANALYSIS:
+    {agents_output["risk_analysis"]}
+
+    FORECAST:
+    {agents_output["forecast"]}
+
     DEMAND AGENT:
     {agents_output["demand"]}
 

@@ -364,28 +364,6 @@ Próxima evolução:
 
 # 🚀 Próximos Passos
 
-## ETAPA 18 — Real Forecasting
-
-Implementar:
-- XGBoost
-- Prophet
-- séries temporais
-- previsão real de demanda
-
-## ETAPA 19 — Supply Chain Simulation
-
-Adicionar:
-- simulação de cadeia logística
-- eventos discretos
-- risco operacional
-
-## ETAPA 20 — Autonomous Replenishment
-
-Permitir:
-- decisões automáticas
-- reorder inteligente
-- compra autônoma
-
 ## ETAPA 21 — MLOps
 
 Adicionar:
